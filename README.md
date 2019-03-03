@@ -24,7 +24,7 @@ INSERT INTO jogos (nome, genero, publicadora, anoLancamento) VALUES ('Assassin\'
 ```
 Caso seja necessário, altere as informações de conexão ao Banco de Dados no arquivo `index.js` da API (linhas 12 a 16).
 
-Abra dois prompts de comando dentro de cada pasta baixada em . Em cada um deles, executar `npm install`.
+Abra dois prompts de comando dentro de cada pasta baixada neste repositório. Em cada um deles, executar `npm install`.
 
 No prompt aberto na pasta da API, execute `node index.js`
 
