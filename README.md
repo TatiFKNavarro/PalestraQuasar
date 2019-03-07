@@ -2,7 +2,7 @@
 
 Primeiramente, é necessário instalar o NodeJs. Site: http://nodejs.org
 
-Após instalar, verificar se está tudo certo digitando o comando node -v no prompt. A saída deve ser v11.10.1 (ou sua versão instalada). Caso apareça `'node' não é reconhecido como um comando interno`, tente reiniciar o prompt de comando e/ou fazer logoff.
+Após instalar, verificar se está tudo certo digitando o comando node -v no prompt. A saída deve ser `v11.10.1` (ou sua versão instalada). Caso apareça `'node' não é reconhecido como um comando interno`, tente reiniciar o prompt de comando e/ou fazer logoff.
 
 Instalar o quasar e suas dependências (vue, cordova) com:
 
@@ -28,7 +28,7 @@ Abra dois prompts de comando dentro de cada pasta baixada neste repositório. Em
 
 No prompt aberto na pasta da API, execute `node index.js`
 
-No prompt aberto na pasta da API, execute `quasar dev`
+No prompt aberto na pasta do Quasar, execute `quasar dev`
 
 ## Como instalar e configurar o cordova
 
