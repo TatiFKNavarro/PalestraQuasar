@@ -2,6 +2,11 @@
   <q-page class="layout-padding">
     <div class="row">
       <div class="col-md-12">
+        <q-btn @click="$router.push('/novo')" label="Novo Jogo" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <!-- Apontando nas variáveis do data quais dados, quais colunas usar, assim qual o identificador único da linha, e qual indicação de que
         a tabela já foi carregada. -->
         <!-- Os componentes q-table, q-tr e q-td foram importados no arquivo /quasar.conf.js -->

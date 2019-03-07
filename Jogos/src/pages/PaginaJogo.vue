@@ -20,6 +20,11 @@
         <q-btn @click="salvar()" label="Salvar" class="full-width" color="primary" />
       </div>
     </div>
+    <div class="row q-mt-sm">
+      <div class="col-12">
+        <q-btn @click="apagar()" label="Apagar" class="full-width" color="negative" />
+      </div>
+    </div>
   </q-page>
 </template>
 
@@ -48,6 +53,35 @@ export default {
             message: 'Salvo com sucesso'
           })
         })
+    },
+
+    apagar () {
+      this.$q.dialog({
+        title: 'Atenção',
+        message: 'Deseja realmente apagar esse jogo?',
+        color: 'primary',
+        ok: 'Sim',
+        cancel: 'Não'
+      })
+        .then(() => {
+          Axios.delete(`http://localhost:3000/jogos/${this.jogo.id}`)
+            .then(() => {
+              // Mostrar um indicativo de que o update deu certo
+              this.$q.notify({
+                color: 'positive',
+                message: 'Apagado com sucesso'
+              })
+              this.$router.push('/')
+            })
+            .catch(() => {
+              // Mostrar um indicativo de que o update deu certo
+              this.$q.notify({
+                color: 'negative',
+                message: 'Erro ao apagar'
+              })
+            })
+        })
+        .catch(() => {})
     }
   },
   mounted () {
